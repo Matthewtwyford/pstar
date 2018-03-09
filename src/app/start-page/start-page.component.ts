@@ -51,8 +51,9 @@ export class StartPageComponent implements OnInit {
   }
 
   chuckNorris() {
-    this.chuckService.getChuckNorrisWisdom().subscribe(wisdom => {
-      this.chuckNorrisWisdom = wisdom.json();
-    });
+    this.chuckService.getChuckNorrisWisdom().subscribe(
+      wisdom => {
+        this.chuckNorrisWisdom = wisdom.json();
+      });
   }
 }
